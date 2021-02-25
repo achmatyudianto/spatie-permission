@@ -1,0 +1,10 @@
+composer require spatie/laravel-permission
+php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"
+php artisan migrate
+php artisan make:seeder RoleSeeder
+php artisan make:seeder UserSeeder
+php artisan db:seed
+composer require laravel/ui "^2.0"
+php artisan ui --auth bootsrap
+npm install
+npm run dev
